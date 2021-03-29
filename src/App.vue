@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/timeline">时间轴</router-link> |
+      <router-link to="/scroll">滚动轴</router-link>
     </div>
     <router-view />
   </div>
