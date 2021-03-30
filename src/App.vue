@@ -2,7 +2,8 @@
   <div id="app">
     <div id="nav">
       <router-link to="/timeline">时间轴</router-link> |
-      <router-link to="/scroll">滚动轴</router-link>
+      <router-link to="/scroll">滚动轴</router-link> |
+      <router-link to="/cards">卡片</router-link> |
     </div>
     <router-view />
   </div>

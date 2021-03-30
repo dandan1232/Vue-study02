@@ -1,8 +1,8 @@
-import Vue from "vue";
-import VueRouter from "vue-router";
-import Home from "../views/Timeline.vue";
+import Vue from "vue"
+import VueRouter from "vue-router"
+import Home from "../views/Timeline.vue"
 
-Vue.use(VueRouter);
+Vue.use(VueRouter)
 
 const routes = [
   {
@@ -23,18 +23,21 @@ const routes = [
   {
     path: "/timeline",
     name: "Timeline",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/Timeline.vue"),
   },
-];
+  {
+    path: "/cards",
+    name: "Cards",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Cards.vue"),
+  },
+]
 
 const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
   routes,
-});
+})
 
-export default router;
+export default router
