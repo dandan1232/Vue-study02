@@ -4,6 +4,11 @@
       <router-link to="/timeline">时间轴</router-link> |
       <router-link to="/scroll">滚动轴</router-link> |
       <router-link to="/cards">卡片</router-link> |
+      <router-link to="/grids">网格</router-link> |
+      <router-link to="/componentWithMap">地图</router-link> |
+      <router-link to="/list">列表</router-link> |
+
+      <ComponentWithMap />
     </div>
     <router-view />
   </div>

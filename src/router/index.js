@@ -32,6 +32,24 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/Cards.vue"),
   },
+  {
+    path: "/grids",
+    name: "Grids",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Grids.vue"),
+  },
+  {
+    path: "/componentWithMap",
+    name: "ComponentWithMap",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/ComponentWithMap.vue"),
+  },
+  {
+    path: "/list",
+    name: "List",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/List.vue"),
+  },
 ]
 
 const router = new VueRouter({
